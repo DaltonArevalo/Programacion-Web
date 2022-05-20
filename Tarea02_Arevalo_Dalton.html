@@ -1,0 +1,35 @@
+<html>
+	<head>
+	<title> Pagina WEB de Dalton</title>
+	<head>
+	<body>
+	<h1>Registro de Datos</h1>
+	<h3>Pagina web para el registro de información del personal de la empresa ABC</h3>
+	<h2>Información</h2>
+
+	<form action="ejemplo.php" method="get">
+	  <p>Apellidos: <input type="text" name="apellido" placeholder="ingrese apellido" size="40"></p>
+	  <p>Nombres: <input type="text" name="nombre" placeholder="ingrese nombre" size="40"></p>
+		<p>Dirección: <input type="text" name="dirreccion" placeholder="ingrese su domicilio" size="40" maxlength="10"></p>
+		<p>Contraseña: <input type="text" name="clave" placeholder="Ingrese su clave" size="40" maxlength="5"></p>
+	  <p>Año de nacimiento: <input type="number" name="nacido" min="1900"></p>
+		<p>Edad: <input type="number" name="edad" min="18"></p>
+		<p>Escoja un color: <input type="color"></p>
+	  <p>Género:
+	    <input type="radio" name="hm" value="h" required=""> Hombre
+	    <input type="radio" name="hm" value="m" required=""> Mujer
+	  </p>
+		<p>Conocimientos
+			<input type="checkbox" name="casilla"> Java
+			<input type="checkbox" name="casilla"> C++
+			<input type="checkbox" name="casilla"> CSS
+			<input type="checkbox" name="casilla"> PHP
+		</p>
+	  <p>
+	    <input type="submit" value="Enviar">
+	    <input type="reset" value="Borrar">
+	  </p>
+	</form>
+
+	</body>
+</html>
