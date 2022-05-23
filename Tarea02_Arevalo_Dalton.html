@@ -1,35 +1,48 @@
+<!DOCTYPE html>
 <html>
 	<head>
-	<title> Pagina WEB de Dalton</title>
-	<head>
+		<title>Formulario de registro - Mi web</title>
+	</head>
 	<body>
-	<h1>Registro de Datos</h1>
-	<h3>Pagina web para el registro de información del personal de la empresa ABC</h3>
-	<h2>Información</h2>
-
-	<form action="ejemplo.php" method="get">
-	  <p>Apellidos: <input type="text" name="apellido" placeholder="ingrese apellido" size="40"></p>
-	  <p>Nombres: <input type="text" name="nombre" placeholder="ingrese nombre" size="40"></p>
-		<p>Dirección: <input type="text" name="dirreccion" placeholder="ingrese su domicilio" size="40" maxlength="10"></p>
-		<p>Contraseña: <input type="text" name="clave" placeholder="Ingrese su clave" size="40" maxlength="5"></p>
-	  <p>Año de nacimiento: <input type="number" name="nacido" min="1900"></p>
-		<p>Edad: <input type="number" name="edad" min="18"></p>
-		<p>Escoja un color: <input type="color"></p>
-	  <p>Género:
-	    <input type="radio" name="hm" value="h" required=""> Hombre
-	    <input type="radio" name="hm" value="m" required=""> Mujer
-	  </p>
-		<p>Conocimientos
-			<input type="checkbox" name="casilla"> Java
-			<input type="checkbox" name="casilla"> C++
-			<input type="checkbox" name="casilla"> CSS
-			<input type="checkbox" name="casilla"> PHP
-		</p>
-	  <p>
-	    <input type="submit" value="Enviar">
-	    <input type="reset" value="Borrar">
-	  </p>
+		<h1>Formulario de registro - Creado por Dalton Arévalo</h1>
+		<form action="" method="get">
+	<p>
+		<label for="nombre">Nombre:</label> <input type="text" name="nombre" id="nombre" maxlength="50" />
+	</p>
+	<p>
+		<label for="apellidos">Apellidos:</label> <input type="text" name="apellidos" id="apellidos" maxlength="50" />
+	</p>
+	<p>
+		Genero: <input type="radio" name="sexo" id="sexo-h" value="h" /> <label for="sexo-h">hombre</label> <input type="radio"
+		name="sexo" id="sexo-m" value="m" /> <label for="sexo-m">mujer</label>
+	</p>
+	<p>
+		<label for="correo">Correo:</label> <input type="text" name="correo" id="correo" maxlength="100" />
+	</p>
+	<p>
+		<label for="poblacion">Población:</label>
+		<select name="poblacion" id="poblacion">
+			<option>Quito</option>
+			<option>Guayaquil</option>
+			<option>Cuenca</option>
+			<option>Loja</option>
+		</select>
+	</p>
+	<p><label for="descripcion">Descripción:</label>
+		<textarea name="descripcion" id="descripcion" rows="6" cols="60"></textarea>
+	</p>
+	<p>
+		<input type="checkbox" name="info" id="info" checked="checked" /> <label
+		for="info">Deseo recibir información sobre novedades y ofertas</label>
+	</p>
+	<p>
+		<input type="checkbox" name="condiciones" id="condiciones" /> <label
+		for="condiciones"> Declaro haber leido y aceptar las condiciones generales del
+		programa y la normativa sobre protección de datos</label>
+	</p>
+	<p>
+		<input type="submit" value="Enviar" />
+	</p>
 	</form>
-
 	</body>
 </html>
