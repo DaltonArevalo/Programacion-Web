@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Cambiar Estilos</title>
+</head>
+<script type="text/javascript">
+    function azul(){
+        document.getElementById("caja").style.background="blue"
+    }
+    function amarillo(){
+        document.getElementById("caja").style.background="yellow"
+    }
+    function rojo(){
+        document.getElementById("caja").style.background="red"
+    }
+</script>
+<body>
+    <input type="submit" style="background: blue;" onclick="azul()">
+    <input type="submit" style="background: yellow;" onclick="amarillo()">
+    <input type="submit" style="background: red;" onclick="rojo()">
+    <section id="caja" style="width: 400px; height:300px; border:2px solid #000;"></section>
+</body>
+</html>     
